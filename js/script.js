@@ -1,9 +1,9 @@
 import { cardComponent } from "../components/cardComponent.js";
-import { products } from "../data/products.js";
+import { product } from "../data/product.js";
 
-console.log(products);
 let readerArea = document.querySelector("#card");
 
-products.map((product) => {
+product.map((product) => {
   readerArea.innerHTML += cardComponent(product);
 });
+console.log(product);
